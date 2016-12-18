@@ -128,6 +128,7 @@ a, a:visited {
   color: #428BCA;
   text-decoration: none;
   font-weight: bold;
+  white-space: nowrap;
 }
 
 a:hover {
