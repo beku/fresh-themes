@@ -8,6 +8,30 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     {{{styleSheet "modern-html.css"}}}
+    <script type="text/javascript">
+      function make_responsive () {
+        if( typeof screen != "undefined" ) {
+                var fontSize = "1rem";
+                if( screen.width < 400 ) {
+                        fontSize = "2rem";
+                }
+                else if( screen.width < 720 ) {
+                        fontSize = "1.5rem";
+                }
+                else if( screen.width < 1320 ) {
+                        fontSize = "1rem";
+                }
+                if( typeof document.children === "object" ) {
+                        var obj = document.children[0]; // html node
+                        obj.style["font-size"] = fontSize;
+                } else if( typeof document.body != "undefined" ) {
+                        document.body.style.fontSize = fontSize;
+                }
+        }
+      }
+      document.addEventListener( "DOMContentLoaded", make_responsive, false );
+      window.addEventListener( "orientationchange", make_responsive, false );
+    </script>
   </head>
 
   <body>
