@@ -83,6 +83,7 @@ body.pdf #container > header {
   margin-left: 3em;
   position: relative;
   display: block;
+  page-break-inside: avoid;
 }
 
 span.fa
