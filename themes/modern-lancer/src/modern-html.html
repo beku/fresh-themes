@@ -148,6 +148,7 @@
 {{/if}}
 </h3>
 {{#if start}}<span class="tenure">{{dateRange .}}</span>{{/if}}
+{{#if start}}| {{/if}}{{#if area}}{{area}}{{/if}}
 {{#if curriculum}}
 {{#if start}}| {{/if}}<span class="keywords">{{#each curriculum}}{{{ . }}} {{/each}}</span>
 {{/if}}
