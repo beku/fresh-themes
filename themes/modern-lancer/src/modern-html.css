@@ -31,9 +31,9 @@ body.pdf {
 the PDF case, <main> for the HTML case, and style both via an ID. */
 #main {
   background-color: #FFF;
-  margin: 10px;
-  padding: 10px;
-  border: 1px solid #E6E6E6;
+  margin: 0.6em;
+  padding: 0.6em;
+  border: 0.1em solid #E6E6E6;
 }
 
 body.pdf > #main {
@@ -42,12 +42,11 @@ body.pdf > #main {
 
 #container > header {
   padding-top: 3em;
-  /*padding-bottom: 10em;*/
-  height: 250px;
+  padding-bottom: 1em;
 }
 
 #container #picture {
-  margin-top: 20px;
+  margin-top: 1.2em;
 }
 
 
@@ -89,39 +88,40 @@ body.pdf #container > header {
 span.fa
 {
   position: absolute;
-  top: 4px;
   /*left: -50px;*/
   left: -1.5em;
-  font-size: 30px;
-  color: #BFC1C3;
+  font-size: 1.8em;
+  line-height: 1.42857143;
+  color: #778083;
 }
 
 hr {
   margin-top: 20px;
   margin-bottom: 20px;
   border: 0;
-  border-top: 1px solid #EEE;
+  border-top: 0.2em solid #EEE;
 }
 
 .tenure, .keywords {
-  font-size: 75%;
+  font-size: 1em;
 }
 
 h1 {
-  margin: 0;
-  font-size: 46px;
+  margin: 0.1em;
+  font-size: 2.4em;
+  margin-bottom: 0.5em;
 }
 
 h2 {
-  font-size: 24px;
-  color: #BFC1C3;
+  font-size: 1.8em;
+  color: #778083;
   text-transform: uppercase;
   font-weight: normal;
 }
 
 h3 {
   margin-bottom: 0;
-  font-size: 18px;
+  font-size: 1.1em;
 }
 
 a, a:visited {
@@ -150,10 +150,10 @@ a:hover {
   background: #7eb0db;
   color: white;
   font-size: 0.9em;
-  padding: 5px;
+  padding: 0.4em;
   border: 1px solid #357ebd;
   border-radius: 5px;
-  margin-top: 2px;
+  margin-top: 0.4em;
 }
 
 .card-skills {
@@ -162,26 +162,26 @@ a:hover {
 .card-nested {
     min-height: 0;
     margin-bottom: 10px;
-    border-width: 1px 0 0 0;
+    border-width: 0.1em 0 0 0;
 }
 .card {
     background: #FFF;
     border-radius: 3px;
-    padding: 10px;
+    padding: 0.6em;
 }
 
 .skill-level {
-  border-radius: 3px;
+  border-radius: 0.2em;
   position: absolute;
   top: 10px;
   bottom: 10px;
   left: 0;
-  width: 10px;
-  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5);
+  width: 0.6em;
+  box-shadow: inset 0 0 0.2em rgba(0, 0, 0, 0.5);
 }
 .skill-level .skill-progress {
   position: absolute;
-  border-radius: 3px;
+  border-radius: 0.2em;
   bottom: 0;
   width: 100%;
   -webkit-transition: height 1s ease;
@@ -189,25 +189,30 @@ a:hover {
 .skill-level .skill-progress.beginner {
   height: 50%;
   background: #e74c3c;
+  border: 0.05em solid #e74c3c;
 }
 .skill-level .skill-progress.intermediate {
   height: 70%;
   background: #f1c40f;
+  border: 0.05em solid #f1c40f;
 }
 .skill-level .skill-progress.advanced {
   height: 80%;
   background: #428bca;
+  border: 0.05em solid #428bca;
 }
 .skill-level .skill-progress.master {
   height: 95%;
   background: #5cb85c;
+  border: 0.05em solid #5cb85c;
 }
 .skill-info {
   margin-left: 10px;
 }
-@media (max-width: 480px) {
+
+@media (max-width: 750px) {
   .skill-info {
-    margin-left: 20px;
+    margin-left: 1em;
   }
 }
 
@@ -225,14 +230,20 @@ a:hover {
 }
 
 #container {
-  max-width: 800px;
+  max-width: 100%;
   margin: 0 auto;
+}
+
+@media (min-width: 1000px) {
+  #container {
+    width: 800px;
+  }
 }
 
 #elevator-pitch {
   text-align: center;
-  font-size: 24px;
-  color: #BFC1C3;
+  font-size: 2em;
+  color: #778083;
   text-transform: uppercase;
   font-weight: normal;
 }
