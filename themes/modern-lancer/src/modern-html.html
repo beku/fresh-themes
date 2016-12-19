@@ -37,22 +37,22 @@
  
       <span class="nav-bar"> 
       {{#if r.info.brief}}<a href="#summary"><span class="fa fa-lg fa-info"></span> INFO</a> {{/if}}
-      {{#if r.skills.sets}}<a href="#skills"><span class="fa fa-lg fa-code"></span> SKILLS</a> {{/if}}
-      {{#if r.projects}}<a href="#projects"><span class="fa fa-lg fa-star"></span> PROJECTS</a> {{/if}}
-      {{#if r.employment}}<a href="#employment"><span class="fa fa-lg fa-building"></span> WORK</a> {{/if}}
-      {{#if r.education}}<a href="#education"><span class="fa fa-lg fa-mortar-board"></span> EDUCATION</a> {{/if}}
-      {{#if r.languages}}<a href="#languages"><span class="fa fa-lg fa-language"></span> LANGUAGES</a> {{/if}}
-      {{#if r.governance}}<a href="#governance"><span class="fa fa-lg fa-balance-scale"></span> GOVERNANCE</a> {{/if}}
-      {{#if r.service}}<a href="#service"><span class="fa fa-lg fa-child"></span> SERVICE</a> {{/if}}
-      {{#if r.affiliation}}<a href="#affiliation"><span class="fa fa-lg fa-share-alt"></span> AFFILIATION</a> {{/if}}
-      {{#if r.samples}}<a href="#samples"><span class="fa fa-lg fa-share"></span> SAMPLES</a> {{/if}}
-      {{#if r.writing}}<a href="#writing"><span class="fa fa-lg fa-pencil"></span> WRITING</a> {{/if}}
-      {{#if r.reading}}<a href="#reading"><span class="fa fa-lg fa-book"></span> READING</a> {{/if}}
-      {{#if r.recognition}}<a href="#recognition"><span class="fa fa-lg fa-trophy"></span> RECOGNITION</a> {{/if}}
-      {{#if r.speaking}}<a href="#speaking"><span class="fa fa-lg fa-users"></span> SPEAKING</a> {{/if}}
-      {{#if r.testimonials}}<a href="#testimonials"><span class="fa fa-lg fa-quote-left"></span> TESTIMONIALS</a> {{/if}}
-      {{#if r.references}}<a href="#references"><span class="fa fa-lg fa-thumbs-o-up"></span> REFERENCES</a> {{/if}}
-      {{#if r.interests}}<a href="#interests"><span class="fa fa-lg fa-bicycle"></span> INTERESTS</a>{{/if}}
+      {{#if r.skills.sets}}<a href="#skills"><span class="fa fa-lg fa-code"></span> SKILLS : {{r.skills.sets.length}}</a> {{/if}}
+      {{#if r.projects}}<a href="#projects"><span class="fa fa-lg fa-star"></span> PROJECTS : {{r.projects.length}}</a> {{/if}}
+      {{#if r.employment}}<a href="#employment"><span class="fa fa-lg fa-building"></span> WORK : {{r.employment.history.length}}</a> {{/if}}
+      {{#if r.education}}<a href="#education"><span class="fa fa-lg fa-mortar-board"></span> EDUCATION : {{r.education.history.length}}</a> {{/if}}
+      {{#if r.languages}}<a href="#languages"><span class="fa fa-lg fa-language"></span> LANGUAGES : {{r.languages.length}}</a> {{/if}}
+      {{#if r.governance}}<a href="#governance"><span class="fa fa-lg fa-balance-scale"></span> GOVERNANCE : {{r.governance.length}}</a> {{/if}}
+      {{#if r.service}}<a href="#service"><span class="fa fa-lg fa-child"></span> SERVICE : {{r.service.history.length}}</a> {{/if}}
+      {{#if r.affiliation}}<a href="#affiliation"><span class="fa fa-lg fa-share-alt"></span> AFFILIATION : {{r.affiliation.history.length}}</a> {{/if}}
+      {{#if r.samples}}<a href="#samples"><span class="fa fa-lg fa-share"></span> SAMPLES : {{r.samples.length}}</a> {{/if}}
+      {{#if r.writing}}<a href="#writing"><span class="fa fa-lg fa-pencil"></span> WRITING : {{r.writing.length}}</a> {{/if}}
+      {{#if r.reading}}<a href="#reading"><span class="fa fa-lg fa-book"></span> READING : {{r.reading.length}}</a> {{/if}}
+      {{#if r.recognition}}<a href="#recognition"><span class="fa fa-lg fa-trophy"></span> RECOGNITION : {{r.recognition.length}}</a> {{/if}}
+      {{#if r.speaking}}<a href="#speaking"><span class="fa fa-lg fa-users"></span> SPEAKING : {{r.speaking.length}}</a> {{/if}}
+      {{#if r.testimonials}}<a href="#testimonials"><span class="fa fa-lg fa-quote-left"></span> TESTIMONIALS : {{r.testimonials.length}}</a> {{/if}}
+      {{#if r.references}}<a href="#references"><span class="fa fa-lg fa-thumbs-o-up"></span> REFERENCES : {{r.references.length}}</a> {{/if}}
+      {{#if r.interests}}<a href="#interests"><span class="fa fa-lg fa-bicycle"></span> INTERESTS : {{r.interests.length}}</a>{{/if}}
       </span>
 
 {{#*inline "icon-info"}}<span class="fa fa-lg fa-info"></span>{{/inline}}
