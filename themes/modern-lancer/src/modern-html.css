@@ -145,12 +145,6 @@ a:hover {
   text-decoration: underline;
 }
 
-@media print {
-  .nav-bar {
-    display: none !important;
-  }
-}
-
 #main > #container > span.nav-bar > a {
   white-space: nowrap;
 }
