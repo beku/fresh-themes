@@ -86,6 +86,10 @@ body.pdf #container > header {
   page-break-inside: avoid;
 }
 
+#main > #container > section > div {
+  page-break-inside: avoid;
+}
+
 span.fa
 {
   position: absolute;
