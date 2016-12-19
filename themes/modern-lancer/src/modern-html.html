@@ -2,36 +2,13 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ RAW.name }}</title>
 
     {{!<!-- TODO: Optimize Google Fonts and Font Awesome access. -->}}
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     {{{styleSheet "modern-html.css"}}}
-    <script type="text/javascript">
-      function make_responsive () {
-        if( typeof screen != "undefined" ) {
-                var fontSize = "1rem";
-                if( screen.width < 400 ) {
-                        fontSize = "2rem";
-                }
-                else if( screen.width < 720 ) {
-                        fontSize = "1.5rem";
-                }
-                else if( screen.width < 1320 ) {
-                        fontSize = "1rem";
-                }
-                if( typeof document.children === "object" ) {
-                        var obj = document.children[0]; // html node
-                        obj.style["font-size"] = fontSize;
-                } else if( typeof document.body != "undefined" ) {
-                        document.body.style.fontSize = fontSize;
-                }
-        }
-      }
-      document.addEventListener( "DOMContentLoaded", make_responsive, false );
-      window.addEventListener( "orientationchange", make_responsive, false );
-    </script>
   </head>
 
   <body>
@@ -58,24 +35,24 @@
       </header>
 
  
-      <span class="hidden-print"> 
-      {{#if r.info.brief}}<a href="#summary"><span class="fa fa-lg fa-info" style="position:static;"></span> INFO </a> {{/if}}
-      {{#if r.skills.sets}}<a href="#skills"><span class="fa fa-lg fa-code" style="position:static"></span> SKILLS</a> {{/if}}
-      {{#if r.projects}}<a href="#projects"><span class="fa fa-lg fa-star" style="position:static"></span> PROJECTS</a> {{/if}}
-      {{#if r.employment}}<a href="#employment"><span class="fa fa-lg fa-building" style="position:static"></span> WORK</a> {{/if}}
-      {{#if r.education}}<a href="#education"><span class="fa fa-lg fa-mortar-board" style="position:static"></span> EDUCATION</a> {{/if}}
-      {{#if r.languages}}<a href="#languages"><span class="fa fa-lg fa-language" style="position:static"></span> LANGUAGES</a> {{/if}}
-      {{#if r.governance}}<a href="#governance"><span class="fa fa-lg fa-balance-scale" style="position:static"></span> GOVERNANCE</a> {{/if}}
-      {{#if r.service}}<a href="#service"><span class="fa fa-lg fa-child" style="position:static"></span> SERVICE</a> {{/if}}
-      {{#if r.affiliation}}<a href="#affiliation"><span class="fa fa-lg fa-share-alt" style="position:static"></span> AFFILIATION</a> {{/if}}
-      {{#if r.samples}}<a href="#samples"><span class="fa fa-lg fa-share" style="position:static"></span> SAMPLES</a> {{/if}}
-      {{#if r.writing}}<a href="#writing"><span class="fa fa-lg fa-pencil" style="position:static"></span> WRITING</a> {{/if}}
-      {{#if r.reading}}<a href="#reading"><span class="fa fa-lg fa-book" style="position:static"></span> READING</a> {{/if}}
-      {{#if r.recognition}}<a href="#recognition"><span class="fa fa-lg fa-trophy" style="position:static"></span> RECOGNITION</a> {{/if}}
-      {{#if r.speaking}}<a href="#speaking"><span class="fa fa-lg fa-users" style="position:static"></span> SPEAKING</a> {{/if}}
-      {{#if r.testimonials}}<a href="#testimonials"><span class="fa fa-lg fa-quote-left" style="position:static"></span> TESTIMONIALS</a> {{/if}}
-      {{#if r.references}}<a href="#references"><span class="fa fa-lg fa-thumbs-o-up" style="position:static"></span> REFERENCES</a> {{/if}}
-      {{#if r.interests}}<a href="#interests"><span class="fa fa-lg fa-bicycle" style="position:static"></span> INTERESTS</a>{{/if}}
+      <span class="nav-bar"> 
+      {{#if r.info.brief}}<a href="#summary"><span class="fa fa-lg fa-info"></span> INFO</a> {{/if}}
+      {{#if r.skills.sets}}<a href="#skills"><span class="fa fa-lg fa-code"></span> SKILLS</a> {{/if}}
+      {{#if r.projects}}<a href="#projects"><span class="fa fa-lg fa-star"></span> PROJECTS</a> {{/if}}
+      {{#if r.employment}}<a href="#employment"><span class="fa fa-lg fa-building"></span> WORK</a> {{/if}}
+      {{#if r.education}}<a href="#education"><span class="fa fa-lg fa-mortar-board"></span> EDUCATION</a> {{/if}}
+      {{#if r.languages}}<a href="#languages"><span class="fa fa-lg fa-language"></span> LANGUAGES</a> {{/if}}
+      {{#if r.governance}}<a href="#governance"><span class="fa fa-lg fa-balance-scale"></span> GOVERNANCE</a> {{/if}}
+      {{#if r.service}}<a href="#service"><span class="fa fa-lg fa-child"></span> SERVICE</a> {{/if}}
+      {{#if r.affiliation}}<a href="#affiliation"><span class="fa fa-lg fa-share-alt"></span> AFFILIATION</a> {{/if}}
+      {{#if r.samples}}<a href="#samples"><span class="fa fa-lg fa-share"></span> SAMPLES</a> {{/if}}
+      {{#if r.writing}}<a href="#writing"><span class="fa fa-lg fa-pencil"></span> WRITING</a> {{/if}}
+      {{#if r.reading}}<a href="#reading"><span class="fa fa-lg fa-book"></span> READING</a> {{/if}}
+      {{#if r.recognition}}<a href="#recognition"><span class="fa fa-lg fa-trophy"></span> RECOGNITION</a> {{/if}}
+      {{#if r.speaking}}<a href="#speaking"><span class="fa fa-lg fa-users"></span> SPEAKING</a> {{/if}}
+      {{#if r.testimonials}}<a href="#testimonials"><span class="fa fa-lg fa-quote-left"></span> TESTIMONIALS</a> {{/if}}
+      {{#if r.references}}<a href="#references"><span class="fa fa-lg fa-thumbs-o-up"></span> REFERENCES</a> {{/if}}
+      {{#if r.interests}}<a href="#interests"><span class="fa fa-lg fa-bicycle"></span> INTERESTS</a>{{/if}}
       </span>
 
 {{#*inline "icon-info"}}<span class="fa fa-lg fa-info"></span>{{/inline}}

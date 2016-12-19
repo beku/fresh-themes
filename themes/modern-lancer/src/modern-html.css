@@ -228,7 +228,7 @@ a:hover {
   margin-left: 10px;
 }
 
-@media (max-width: 750px) {
+@media screen and (max-width: 750px) {
   .skill-info {
     margin-left: 1em;
   }
@@ -252,7 +252,7 @@ a:hover {
   margin: 0 auto;
 }
 
-@media (min-width: 1000px) {
+@media screen and (min-width: 1000px) {
   #container {
     width: 800px;
   }
