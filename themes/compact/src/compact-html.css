@@ -37,6 +37,14 @@ main {
   margin: 0 auto;
 }
 
+main > section > header {
+  page-break-after: avoid;
+}
+
+main > section > div {
+  page-break-inside: avoid;
+}
+
 section {
   margin-top: 1em;
 }
